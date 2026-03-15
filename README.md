@@ -1,6 +1,6 @@
-# Sistema de Sorteio
+<h1 align="center">Sistema de Sorteio</h1>
 
-Sistema profissional de sorteio com 3 modalidades: Números, Nomes e Roleta.
+<h4 align="center">Sistema profissional de sorteio com 3 modalidades: Números, Nomes e Roleta.</h4>
 
 ## Stack
 
@@ -98,9 +98,6 @@ npm test
 | **Templates** | Salvar/carregar modelos de sorteio (autenticado) |
 | **Histórico** | Resultados salvos com TTL de 30 dias |
 
-## Desenvolvedor
-
-Desenvolvido por **Vitor Lohan**.
 
 ## Segurança
 
@@ -140,3 +137,7 @@ Desenvolvido por **Vitor Lohan**.
 
 ### Health
 - `GET /api/health` - Status da API
+
+## Desenvolvedor
+
+Desenvolvido por **Vitor Lohan**.

@@ -1,0 +1,40 @@
+.roulette-container {
+  position: relative;
+  display: inline-block;
+}
+
+.roulette-canvas {
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15), 0 0 0 6px var(--color-gray-200);
+}
+
+/* Ponteiro centralizado no topo */
+.roulette-pointer {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Linha marcadora no topo */
+.roulette-marker {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 18px;
+  background: #EF4444;
+  border-radius: 0 0 2px 2px;
+  z-index: 5;
+}
+
+@media (max-width: 480px) {
+  .roulette-canvas {
+    width: 300px !important;
+    height: 300px !important;
+  }
+}

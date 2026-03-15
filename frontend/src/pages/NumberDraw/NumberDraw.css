@@ -1,0 +1,36 @@
+.draw-layout {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.draw-config-box {
+  background: var(--color-gray-50);
+  border: 2px solid var(--color-gray-100);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.draw-options {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.save-section {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.save-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.save-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}

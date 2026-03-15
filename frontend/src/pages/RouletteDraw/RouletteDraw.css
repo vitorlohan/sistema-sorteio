@@ -1,0 +1,242 @@
+/* Page Header */
+.roulette-page-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.roulette-page-icon {
+  color: var(--color-primary);
+}
+
+.roulette-page-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-gray-800);
+}
+
+/* Layout */
+.roulette-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* Sidebar */
+.roulette-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.roulette-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+}
+
+.roulette-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.roulette-card-header h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-gray-800);
+}
+
+.entry-badge,
+.color-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 8px;
+  background: var(--color-primary-bg);
+  color: var(--color-primary-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+}
+
+.roulette-card .form-input {
+  min-height: auto;
+  font-size: 0.88rem;
+}
+
+/* Color list */
+.color-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.color-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 0;
+}
+
+.color-picker {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--color-gray-200);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  padding: 2px;
+  flex-shrink: 0;
+}
+
+.color-hex {
+  font-size: 0.8rem;
+  color: var(--color-gray-400);
+  font-family: monospace;
+  flex: 1;
+}
+
+.color-remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  color: var(--color-gray-400);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.color-remove:hover {
+  color: var(--color-danger);
+  background: var(--color-danger-bg);
+  border-color: var(--color-danger);
+}
+
+.btn-add-color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  background: none;
+  border: 1px dashed var(--color-gray-300);
+  border-radius: var(--radius-md);
+  color: var(--color-gray-500);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.btn-add-color:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary-dark);
+  background: var(--color-primary-bg);
+}
+
+/* Save */
+.save-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.save-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Main area */
+.roulette-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: 40px 32px;
+}
+
+.roulette-wheel-wrapper {
+  margin-bottom: 24px;
+}
+
+.spin-btn {
+  width: 100%;
+  max-width: 320px;
+}
+
+/* Winner */
+.winner-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 20px;
+  padding: 16px 32px;
+  background: var(--color-primary-bg);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+  width: 100%;
+  max-width: 320px;
+}
+
+.winner-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.winner-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-primary-darker);
+}
+
+.alert-error {
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 320px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .roulette-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .roulette-main {
+    order: -1;
+    padding: 28px 20px;
+  }
+
+  .roulette-sidebar {
+    order: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .roulette-main {
+    padding: 20px 16px;
+  }
+
+  .roulette-page-header h1 {
+    font-size: 1.25rem;
+  }
+}

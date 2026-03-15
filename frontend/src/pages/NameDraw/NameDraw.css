@@ -1,0 +1,19 @@
+.file-upload {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.file-upload-label {
+  cursor: pointer;
+  color: var(--color-primary-dark);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.file-link {
+  text-decoration: underline;
+}
+
+.file-upload-label:hover {
+  color: var(--color-primary-darker);
+}
